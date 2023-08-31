@@ -1,0 +1,76 @@
+1. Structure of a C Program:
+
+A C program is organized into a collection of functions. Every C program must have a special function called main() which acts as the entry point. Here's the basic structure:
+
+
+#include <stdio.h> // Include necessary libraries
+
+int main() {
+    // Your code goes here
+    
+    return 0; // Return 0 to indicate successful execution
+}
+2. Syntax Basics:
+
+a. Statements: Statements are individual instructions in your program, each ending with a semicolon ;. For example:
+
+int x; // Declaration statement
+x = 5; // Assignment statement
+printf("Hello!"); // Function call statement
+b. Variables: Variables are used to store data. They must be declared with a type before use. For example:
+
+
+int age; // Declare an integer variable named 'age'
+float temperature = 98.6; // Declare and initialize a floating-point variable
+char letter = 'A'; // Declare a character variable
+c. Functions: Functions are blocks of code that perform specific tasks. main() is a function, and you can create your own functions too. Here's a simple function:
+
+
+int add(int a, int b) {
+    return a + b;
+}
+d. Comments: Comments provide explanations in your code and are ignored by the compiler. They start with /* and end with */ for multi-line comments or use // for single-line comments:
+
+/* This is a multi-line comment.
+   It can span multiple lines. */
+
+// This is a single-line comment.
+3. Control Flow:
+
+a. Conditional Statements (if-else): Use if and else to make decisions based on conditions:
+
+
+int age = 18;
+if (age >= 18) {
+    printf("You can vote!");
+} else {
+    printf("You cannot vote yet.");
+}
+b. Loops: Loops allow you to repeat code. Common loop types are for and while:
+
+
+for (int i = 1; i <= 10; i++) {
+    printf("%d\n", i);
+}
+
+int count = 0;
+while (count < 5) {
+    printf("Count: %d\n", count);
+    count++;
+}
+4. Data Types:
+
+C has various data types to represent different kinds of values, such as integers, floating-point numbers, characters, and more.
+
+
+int age = 25; // Integer
+float price = 10.99; // Floating-point number
+char grade = 'A'; // Character
+Remember, practicing and experimenting with code is key to understanding and mastering these concepts. Don't be afraid to make mistakes – that's how you learn and improve your programming skills!
+
+
+
+
+
+
+Regenerate

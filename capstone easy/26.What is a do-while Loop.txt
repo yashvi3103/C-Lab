@@ -1,0 +1,44 @@
+26.What is a do-while Loop?
+
+A do-while loop is a programming construct that allows you to repeat a block of code at least once, and then continue repeating as long as a certain condition is true. It's like doing something and then checking if you want to do it again.
+
+Why Use a do-while Loop?
+
+You use a do-while loop when you want to ensure that a block of code runs at least once, regardless of the condition. After the first iteration, it checks the condition to decide if it should continue.
+
+How Does a do-while Loop Work?
+
+A do-while loop first executes the code block, and then checks the condition. If the condition is true, the loop continues; if it's false, the loop stops.
+
+Structure of a do-while Loop:
+
+
+do {
+    // Code to repeat
+} while (condition);
+Example in Easy Terms:
+
+Suppose you want to repeatedly ask a user for their age until they provide a valid age (greater than zero):
+
+
+#include <stdio.h>
+
+int main() {
+    int age;
+
+    do {
+        printf("Please enter your age: ");
+        scanf("%d", &age);
+    } while (age <= 0);
+
+    printf("Thank you! Your age is %d\n", age);
+
+    return 0;
+}
+In this example:
+
+The code inside the do block asks the user for their age.
+The while condition checks if the age is less than or equal to zero. If it's true, the loop continues; if it's false, the loop stops.
+Why the do-while Loop is Important:
+
+The do-while loop is useful when you want to ensure that a piece of code runs at least once, regardless of the condition. It's commonly used for input validation.

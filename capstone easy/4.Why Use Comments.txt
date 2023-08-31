@@ -1,0 +1,54 @@
+4.Why Use Comments?
+
+Comments are used to explain what your code is doing, why you made certain choices, or to provide reminders. They're like little messages to yourself and your teammates, helping you remember what your code does when you come back to it later.
+
+How to Write Comments:
+
+In most programming languages, including C, there are two common ways to write comments:
+
+Single-Line Comments: These are short comments that fit on one line. In C, you use // to start a single-line comment.
+
+
+// This is a single-line comment
+int age = 25; // This comment explains the purpose of the variable
+Multi-Line Comments: These comments can span multiple lines. In C, you use /* to start a multi-line comment and */ to end it.
+
+
+/* This is a multi-line comment.
+   It can span several lines.
+   Useful for longer explanations. */
+Examples:
+
+Here's an example of how comments can be used in a program:
+
+
+#include <stdio.h>
+
+int main() {
+    // Declare variables
+    int apples = 5; // Number of apples
+    float price = 0.99; // Price per apple
+
+    /* Calculate total cost
+       by multiplying the number of apples
+       with the price per apple */
+    float totalCost = apples * price;
+
+    // Display the result
+    printf("Total cost: $%.2f\n", totalCost);
+
+    return 0;
+}
+In this example, comments help explain the purpose of variables, calculations, and the overall flow of the program.
+
+Tips for Effective Comments:
+
+Be Clear: Write comments that are easy to understand and provide relevant information.
+
+Update Comments: If you change your code, update the comments to match the changes.
+
+Avoid Overcommenting: Don't comment every single line; focus on explaining complex logic or important details.
+
+Use Meaningful Names: Well-named variables and functions can make your code easier to understand, reducing the need for excessive comments.
+
+Remember, comments are there to make your code more human-friendly, so don't hesitate to use them to your advantage!

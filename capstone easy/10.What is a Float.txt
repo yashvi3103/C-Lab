@@ -1,0 +1,39 @@
+10.What is a Float?
+
+A "float" is a data type used to store numbers with decimal points. It's short for "floating-point," which refers to the way these numbers are represented in computer memory.
+
+Why Use Floats?
+
+Floats are used to work with numbers that have fractional parts or decimal points. They're a good choice for a wide range of applications where high precision isn't critical.
+
+Examples of Floats:
+
+Temperature in degrees Celsius: 27.5
+Price of an item: 19.99
+Weight in kilograms: 58.7
+Declaring and Using Floats:
+
+In programming, you declare a float variable to store decimal values. Here's how you do it in C:
+
+
+#include <stdio.h>
+
+int main() {
+    float temperature; // Declare a float variable named 'temperature'
+    temperature = 27.5; // Assign the value 27.5 to the 'temperature' variable
+
+    float price = 19.99; // Declare and assign the value 19.99 to the 'price' variable
+
+    float weight = 58.7; // Declare and assign the value 58.7 to the 'weight' variable
+    
+    printf("Temperature: %.1f\n", temperature); // Display the result
+    printf("Price: %.2f\n", price); // Display another float value
+    printf("Weight: %.1f\n", weight); // Display yet another float value
+
+    return 0;
+}
+In this example, the %f in the printf() function is a placeholder for a floating-point (decimal) value, which is replaced by the value of the temperature, price, and weight variables.
+
+Why Floats are Important:
+
+Floats provide a way to handle decimal values efficiently, making them suitable for many real-world applications. They strike a balance between precision and memory usage.

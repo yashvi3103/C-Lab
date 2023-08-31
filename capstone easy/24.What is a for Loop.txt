@@ -1,0 +1,43 @@
+24.What is a for Loop?
+
+A for loop is a programming construct that allows you to repeat a block of code a specific number of times. It's like a controlled way of doing something repeatedly.
+
+Why Use a for Loop?
+
+You use a for loop when you know exactly how many times you want to repeat a certain action. It's great for tasks that have a clear start, end, and a consistent step in between.
+
+How Does a for Loop Work?
+
+A for loop consists of three parts:
+
+Initialization: Setting up a starting point.
+Condition: Defining when to stop the loop.
+Update: Changing the value for the next iteration.
+Structure of a for Loop:
+
+
+for (initialization; condition; update) {
+    // Code to repeat
+}
+Example in Easy Terms:
+
+Suppose you want to print numbers from 1 to 5 using a for loop:
+
+
+#include <stdio.h>
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        printf("%d\n", i);
+    }
+
+    return 0;
+}
+In this example:
+
+Initialization: int i = 1 sets the starting point.
+Condition: i <= 5 defines when the loop should stop.
+Update: i++ increments i after each iteration.
+Why the for Loop is Important:
+
+The for loop is a powerful tool for performing a task a specific number of times. It's efficient and keeps your code organized when you need to repeat an action with a clear pattern.

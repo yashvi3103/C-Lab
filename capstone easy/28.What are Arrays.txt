@@ -1,0 +1,36 @@
+28.What are Arrays?
+
+Arrays are a way to store multiple values of the same type under a single name. They're like a bunch of containers lined up in a row, each holding a different piece of data.
+
+Why Use Arrays?
+
+Arrays are used when you want to group related data together. They help you organize and manage a collection of values more efficiently.
+
+How Do Arrays Work?
+
+Arrays have a fixed size and each value is assigned a unique index, starting from 0. You access values by using the index.
+
+Example in Easy Terms:
+
+Let's say you want to store the ages of three friends:
+
+
+#include <stdio.h>
+
+int main() {
+    int ages[3]; // Create an array to hold three integers
+
+    ages[0] = 25; // Assign values to specific positions
+    ages[1] = 30;
+    ages[2] = 22;
+
+    printf("First friend's age: %d\n", ages[0]);
+    printf("Second friend's age: %d\n", ages[1]);
+    printf("Third friend's age: %d\n", ages[2]);
+
+    return 0;
+}
+
+Why Arrays are Important:
+
+Arrays allow you to efficiently manage and access a collection of related data. They're crucial for handling large sets of information in a structured way.

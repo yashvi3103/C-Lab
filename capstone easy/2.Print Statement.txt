@@ -1,0 +1,34 @@
+2.Print Statement
+
+in programming, a "print" statement is used to display information or output to the screen. It's a way to communicate with the user or see the results of your program's calculations. In the C programming language, the "print" statement is often achieved using the printf() function.
+
+Here's How It Works:
+
+Include the Necessary Library:
+At the beginning of your C program, you include a line like this to tell the computer that you want to use the printf() function:
+
+
+#include <stdio.h>
+Use the printf() Function:
+The printf() function is used to print text and values to the screen. It can display things like words, numbers, and even calculations.
+
+
+printf("Hello, World!\n");
+The text you want to display is written inside the parentheses and quotes ("Hello, World!\n").
+The \n represents a special character that means "newline," which moves the cursor to the next line after printing.
+Printing Variables:
+You can also print the values of variables using the printf() function. Just include placeholders in the text where you want the variables to appear:
+
+
+int age = 30;
+printf("I am %d years old.\n", age);
+%d is a placeholder for an integer value, and the variable age is provided after the comma.
+Multiple Values:
+You can print multiple values by adding more placeholders and corresponding variables:
+
+
+int apples = 5;
+float price = 0.99;
+printf("I have %d apples, each costing $%.2f.\n", apples, price);
+%d for the integer value (apples) and %f for the floating-point value (price).
+.2 after % specifies that the floating-point number should be rounded to two decimal places.

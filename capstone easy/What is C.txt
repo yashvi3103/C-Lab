@@ -1,0 +1,38 @@
+What is C?
+
+C is a programming language that was developed in the 1970s. It's known for its simplicity and power, and it's used to create a wide variety of software, from operating systems to games to applications.
+
+Why Learn C?
+
+Learning C is a great way to get started with programming because it teaches you the fundamental concepts that apply to many other languages. Once you understand C, learning other languages becomes easier.
+
+Basic Concepts:
+
+Variables: In C, you can create variables to store data like numbers or text. For example, you can create a variable called age to store a person's age.
+
+Data Types: Different types of data (like numbers, characters, and more) are represented using data types. Examples include int for integers, float for floating-point numbers, and char for characters.
+
+Functions: Functions are blocks of code that perform specific tasks. You can create your own functions or use pre-existing ones. For example, you could create a function to add two numbers together.
+
+Control Flow: You can make decisions in your code using if statements. For example, you could write code that checks if a person is old enough to vote before allowing them to proceed.
+
+Loops: Loops are used to repeat a block of code. The most common loop types are for loops and while loops. You might use a loop to print numbers from 1 to 10.
+
+Arrays: Arrays allow you to store multiple values of the same type in a single variable. For instance, you could use an array to store a list of temperatures.
+
+Pointers: Pointers are variables that store memory addresses. They're used for more advanced memory manipulation.
+
+Hello World Example:
+
+Here's a classic "Hello, World!" program in C to give you an idea of what the code looks like:
+
+
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+
+
+

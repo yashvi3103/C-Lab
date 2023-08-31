@@ -1,0 +1,53 @@
+5.What are Variables?
+
+Think of a variable as a labeled box or container that holds information. It's like giving a name to a piece of data so you can use and manipulate it easily in your program.
+
+Why Use Variables?
+
+Variables allow you to store and work with different types of data, such as numbers, text, and more. They make your code more flexible and help you avoid repeating the same value multiple times.
+
+How to Declare Variables:
+
+In programming, you declare a variable to create a named storage space for data. In C, you declare a variable by specifying its data type and name:
+
+
+// Declare an integer variable named 'age'
+int age;
+
+// Declare a floating-point variable named 'temperature'
+float temperature;
+
+// Declare a character variable named 'grade'
+char grade;
+Assigning Values to Variables:
+
+After declaring a variable, you can give it a value using the assignment operator =:
+
+
+age = 25; // Assign the value 25 to the 'age' variable
+temperature = 98.6; // Assign the value 98.6 to the 'temperature' variable
+grade = 'A'; // Assign the character 'A' to the 'grade' variable
+You can also declare and assign a value in a single step:
+
+
+int apples = 5; // Declare and assign the value 5 to the 'apples' variable
+Using Variables:
+
+Once you've declared and assigned values to variables, you can use them in your program:
+
+
+int apples = 5;
+int bananas = 3;
+int totalFruit = apples + bananas; // Perform a calculation using variables
+printf("Total fruit: %d\n", totalFruit); // Display the result
+In this example, the totalFruit variable is used to store the sum of apples and bananas, and then it's displayed using the printf() function.
+
+Tips for Using Variables:
+
+Choose Descriptive Names: Use meaningful names for your variables to make your code easier to understand. For example, userName is clearer than uN.
+
+Use Appropriate Data Types: Choose the right data type for your variables based on the kind of data they'll hold (integers, floating-point numbers, characters, etc.).
+
+Update Variables: You can change the value of a variable as your program runs. For example, you could update the age variable to represent someone's age at a later point in the program.
+
+Pay Attention to Scope: Variables are only accessible within the block of code where they're defined. This is known as their "scope."

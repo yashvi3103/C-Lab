@@ -1,0 +1,58 @@
+15.What are Assignment Operators?
+
+Assignment operators are symbols in programming that allow you to assign values to variables. They're like the tools you use to put data into your labeled containers (variables).
+
+Why Use Assignment Operators?
+
+Assignment operators help you store and update values in variables, which is a fundamental aspect of programming. They allow you to work with data, perform calculations, and manipulate information in your programs.
+
+Types of Assignment Operators:
+
+Here are the common assignment operators explained in easy terms:
+
+Assignment (=): Assigns the value on the right to the variable on the left.
+
+
+int age;
+age = 30; // Assigns the value 30 to the 'age' variable
+Addition Assignment (+=): Adds the right value to the existing value of the variable and updates the variable.
+
+
+int score = 10;
+score += 5; // Adds 5 to the 'score' variable, making it 15
+Subtraction Assignment (-=): Subtracts the right value from the existing value of the variable and updates the variable.
+
+
+int total = 100;
+total -= 20; // Subtracts 20 from the 'total' variable, making it 80
+Multiplication Assignment (*=): Multiplies the existing value of the variable by the right value and updates the variable.
+
+
+float price = 2.5;
+price *= 3; // Multiplies 'price' by 3, making it 7.5
+Division Assignment (/=): Divides the existing value of the variable by the right value and updates the variable.
+
+
+int quantity = 24;
+quantity /= 4; // Divides 'quantity' by 4, making it 6
+Examples:
+
+
+#include <stdio.h>
+
+int main() {
+    int x = 10;
+    x += 5; // Adds 5 to 'x', making it 15
+    x -= 3; // Subtracts 3 from 'x', making it 12
+    x *= 2; // Multiplies 'x' by 2, making it 24
+    x /= 4; // Divides 'x' by 4, making it 6
+
+    printf("Value of x: %d\n", x);
+
+    return 0;
+}
+In this example, assignment operators are used to update the value of the variable x and then displayed using the printf() function.
+
+Why Assignment Operators are Important:
+
+Assignment operators are fundamental for storing and updating data in variables. They allow your program to work with changing values, perform calculations, and manage information effectively.

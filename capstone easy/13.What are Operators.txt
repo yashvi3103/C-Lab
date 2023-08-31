@@ -1,0 +1,57 @@
+13.What are Operators?
+
+Operators are symbols or keywords in programming that perform actions on values or variables. They allow you to manipulate and work with data in various ways.
+
+Why Use Operators?
+
+Operators are essential for performing calculations, making comparisons, and combining values. They enable your program to perform tasks like addition, subtraction, multiplication, and more.
+
+Types of Operators:
+
+There are several types of operators in programming. Here are a few explained in easy terms:
+
+Arithmetic Operators: These perform basic mathematical operations.
+
++ Addition: Adds two values together.
+- Subtraction: Subtracts the right value from the left value.
+* Multiplication: Multiplies two values.
+/ Division: Divides the left value by the right value.
+% Modulus: Returns the remainder of division.
+Comparison Operators: These compare two values and return a boolean result.
+
+== Equal to: Checks if two values are equal.
+!= Not equal to: Checks if two values are not equal.
+< Less than: Checks if the left value is less than the right value.
+> Greater than: Checks if the left value is greater than the right value.
+<= Less than or equal to: Checks if the left value is less than or equal to the right value.
+>= Greater than or equal to: Checks if the left value is greater than or equal to the right value.
+Logical Operators: These combine boolean values.
+
+&& Logical AND: Returns true if both values are true.
+|| Logical OR: Returns true if at least one value is true.
+! Logical NOT: Inverts the value, turning true into false and vice versa.
+Assignment Operators: These assign values to variables.
+
+= Assignment: Assigns the value on the right to the variable on the left.
++= Addition assignment: Adds the right value to the left variable and updates the variable.
+-= Subtraction assignment: Subtracts the right value from the left variable and updates the variable.
+*= Multiplication assignment: Multiplies the left variable by the right value and updates the variable.
+/= Division assignment: Divides the left variable by the right value and updates the variable.
+Examples:
+
+
+int x = 10;
+int y = 5;
+int sum = x + y; // Adds x and y
+int difference = x - y; // Subtracts y from x
+int product = x * y; // Multiplies x and y
+int quotient = x / y; // Divides x by y
+int remainder = x % y; // Gets the remainder of x divided by y
+
+bool isTrue = (x == y); // Checks if x is equal to y
+bool isGreater = (x > y); // Checks if x is greater than y
+
+bool logicalResult = (isTrue && isGreater); // Combines boolean values using logical AND
+Why Operators are Important:
+
+Operators are the tools you use to perform various operations on data. They're fundamental for making calculations, comparing values, and controlling the flow of your program.

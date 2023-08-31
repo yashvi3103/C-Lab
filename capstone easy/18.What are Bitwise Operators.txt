@@ -1,0 +1,66 @@
+18.What are Bitwise Operators?
+
+Bitwise operators are symbols in programming that allow you to manipulate the individual bits (binary digits) of integer values at a binary level.
+
+Why Use Bitwise Operators?
+
+Bitwise operators are used for low-level manipulation of binary data, such as turning individual bits on or off, shifting bits left or right, and performing other bitwise operations.
+
+Types of Bitwise Operators:
+
+Here are the common bitwise operators explained in easy terms:
+
+AND (&): Compares each bit of two integers. If both bits are 1, the result is 1; otherwise, it's 0.
+
+
+int result = 5 & 3; // Evaluates to 1 (binary: 101 & 011)
+OR (|): Compares each bit of two integers. If at least one bit is 1, the result is 1; otherwise, it's 0.
+
+
+int result = 5 | 3; // Evaluates to 7 (binary: 101 | 011)
+XOR (^): Compares each bit of two integers. If the bits are different, the result is 1; otherwise, it's 0.
+
+
+int result = 5 ^ 3; // Evaluates to 6 (binary: 101 ^ 011)
+NOT (~): Flips the bits of an integer, turning 1s into 0s and vice versa.
+
+
+int result = ~5; // Evaluates to -6 (binary: ~101)
+Left Shift (<<): Shifts the bits of an integer to the left by a specified number of positions.
+
+
+int result = 5 << 2; // Evaluates to 20 (binary: 101 << 2)
+Right Shift (>>): Shifts the bits of an integer to the right by a specified number of positions.
+
+
+int result = 15 >> 2; // Evaluates to 3 (binary: 1111 >> 2)
+Examples:
+
+
+#include <stdio.h>
+
+int main() {
+    int a = 5;
+    int b = 3;
+
+    int andResult = a & b; // 5 & 3 = 1
+    int orResult = a | b; // 5 | 3 = 7
+    int xorResult = a ^ b; // 5 ^ 3 = 6
+    int notResult = ~a; // ~5 = -6
+    int leftShiftResult = a << 2; // 5 << 2 = 20
+    int rightShiftResult = a >> 1; // 5 >> 1 = 2
+
+    printf("AND Result: %d\n", andResult);
+    printf("OR Result: %d\n", orResult);
+    printf("XOR Result: %d\n", xorResult);
+    printf("NOT Result: %d\n", notResult);
+    printf("Left Shift Result: %d\n", leftShiftResult);
+    printf("Right Shift Result: %d\n", rightShiftResult);
+
+    return 0;
+}
+In this example, bitwise operators are used to manipulate the binary representations of numbers, and the results are displayed using the printf() function.
+
+Why Bitwise Operators are Important:
+
+Bitwise operators are useful for performing low-level binary operations, such as working with flags, optimizing memory usage, and performing certain calculations on individual bits.

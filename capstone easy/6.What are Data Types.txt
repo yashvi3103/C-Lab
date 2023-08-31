@@ -1,0 +1,44 @@
+6.What are Data Types?
+
+Data types are categories that tell the computer what kind of data a variable can hold. They define the characteristics of the data, like whether it's a number, a character, a decimal, or something else.
+
+Why Use Data Types?
+
+Using data types helps the computer understand how to store and handle different types of data in memory. It also allows your program to perform specific operations on the data.
+
+Common Data Types:
+
+In programming, there are several common data types. Here are a few explained in easy terms:
+
+Integer (int): This data type is used for whole numbers. For example:
+
+
+int age = 25;
+Floating-Point (float and double): These data types are used for numbers with decimal points. float is used for smaller decimals, and double is for larger or more precise decimals:
+
+
+float price = 10.99;
+double pi = 3.14159265359;
+Character (char): This data type represents a single character, like a letter or a symbol. Characters are enclosed in single quotes:
+
+char grade = 'A';
+String (char[] or string): Strings are sequences of characters. In C, you use character arrays (char[]) to represent strings:
+
+
+char name[] = "John";
+Boolean (bool): This data type has only two possible values: true or false. It's used for making decisions in your code:
+
+
+bool isRaining = true;
+Examples:
+
+
+int apples = 5;
+float temperature = 98.6;
+char initial = 'J';
+char name[] = "Alice";
+bool isSunny = false;
+
+Why Choose the Right Data Type?
+
+Choosing the correct data type for your variables ensures that you use memory efficiently and perform accurate calculations. For example, if you're working with numbers that have decimal points, you should use a floating-point data type instead of an integer to avoid losing precision.

@@ -1,0 +1,42 @@
+Setting Up MinGW in Easy Terms:
+
+Download MinGW: Go to the MinGW website and download the installer. Make sure you choose the version that's suitable for your Windows system (32-bit or 64-bit).
+
+Run the Installer: Run the downloaded installer. The installer will guide you through the setup process.
+
+Select Components: During installation, you'll be asked to choose which components you want to install. At the very least, you should select the "mingw32-base" package, which includes the essential components for compiling and running C and C++ programs.
+
+Choose Installation Directory: The installer will ask you where you want to install MinGW. You can choose the default location or select a different one. Remember this location, as you might need it later.
+
+Add to System Path: To use MinGW conveniently from the command prompt, you need to add its "bin" directory to your system's PATH environment variable. This allows you to run the compiler and other tools from any directory in the command prompt. To do this:
+
+Right-click on "This PC" (or "My Computer") and select "Properties."
+Click on "Advanced system settings."
+Click on the "Environment Variables" button.
+In the "System variables" section, find the "Path" variable and click "Edit."
+Add the path to the "bin" directory of your MinGW installation (e.g., C:\MinGW\bin).
+Testing: To make sure MinGW is properly installed, open a command prompt and type gcc --version. You should see information about the installed GCC version if everything is set up correctly.
+
+Writing and Compiling Your First Program:
+
+Now that you have MinGW installed, you can write and compile a simple C program.
+
+Open a Text Editor: Use a simple text editor like Notepad to write your C code. Save the file with a .c extension (e.g., hello.c).
+
+Write Your Code: Here's a basic "Hello, World!" program in C:
+
+
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+Compile the Program: Open a command prompt and navigate to the directory where you saved your hello.c file. Use the command gcc hello.c -o hello.exe to compile the program.
+
+Run the Program: After compiling successfully, you'll have an executable file named hello.exe in the same directory. Type hello and press Enter to run your program. You should see the "Hello, World!" output.
+
+
+
+
+

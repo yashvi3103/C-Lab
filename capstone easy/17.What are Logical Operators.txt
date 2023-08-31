@@ -1,0 +1,57 @@
+17.What are Logical Operators?
+
+Logical operators are symbols in programming that allow you to combine or manipulate boolean values (true or false) to make more complex decisions or conditions.
+
+Why Use Logical Operators?
+
+Logical operators help you create more advanced conditions by combining or modifying boolean values. They're essential for creating intricate decision-making logic in your programs.
+
+Types of Logical Operators:
+
+Here are the common logical operators explained in easy terms:
+
+AND (&&): Returns true if both conditions on the left and right are true.
+
+
+bool isSunny = true;
+bool isWarm = true;
+bool result = (isSunny && isWarm); // Evaluates to true
+OR (||): Returns true if at least one of the conditions on the left or right is true.
+
+
+bool isWeekend = false;
+bool isHoliday = true;
+bool result = (isWeekend || isHoliday); // Evaluates to true
+NOT (!): Inverts the boolean value, turning true into false and false into true.
+
+
+bool isRaining = true;
+bool result = !isRaining; // Evaluates to false
+Examples:
+
+
+#include <stdio.h>
+
+int main() {
+    bool hasMoney = true;
+    bool hasTime = false;
+    bool canGoOut = hasMoney && hasTime; // Evaluates to false
+    
+    bool isStudent = true;
+    bool isEmployee = false;
+    bool canApplyDiscount = isStudent || isEmployee; // Evaluates to true
+    
+    bool isCloudy = true;
+    bool isSunny = !isCloudy; // Evaluates to false
+
+    printf("canGoOut: %d\n", canGoOut);
+    printf("canApplyDiscount: %d\n", canApplyDiscount);
+    printf("isSunny: %d\n", isSunny);
+
+    return 0;
+}
+In this example, logical operators are used to combine and modify boolean values, and the results are displayed using the printf() function.
+
+Why Logical Operators are Important:
+
+Logical operators allow you to create more complex conditions by combining and modifying boolean values. They help your program make decisions based on multiple factors.

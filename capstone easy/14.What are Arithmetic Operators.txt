@@ -1,0 +1,60 @@
+14.What are Arithmetic Operators?
+
+Arithmetic operators are symbols in programming that allow you to perform basic mathematical calculations on numbers.
+
+Why Use Arithmetic Operators?
+
+Arithmetic operators help you perform mathematical operations like addition, subtraction, multiplication, and division on numerical values, which is essential for many computations in your programs.
+
+Types of Arithmetic Operators:
+
+Here are the common arithmetic operators explained in easy terms:
+
+Addition (+): Adds two numbers together.
+
+
+int sum = 5 + 3; // sum will be 8
+Subtraction (-): Subtracts the second number from the first.
+
+
+int difference = 10 - 4; // difference will be 6
+Multiplication (*): Multiplies two numbers.
+
+
+int product = 6 * 4; // product will be 24
+Division (/): Divides the first number by the second. Note that division by zero is not allowed.
+
+
+float quotient = 15.0 / 3.0; // quotient will be 5.0
+Modulus (%): Returns the remainder of division.
+
+
+int remainder = 10 % 3; // remainder will be 1
+Examples:
+
+
+#include <stdio.h>
+
+int main() {
+    int x = 10;
+    int y = 3;
+
+    int sum = x + y; // 10 + 3 = 13
+    int difference = x - y; // 10 - 3 = 7
+    int product = x * y; // 10 * 3 = 30
+    int quotient = x / y; // 10 / 3 = 3 (integer division)
+    int remainder = x % y; // 10 % 3 = 1
+
+    printf("Sum: %d\n", sum);
+    printf("Difference: %d\n", difference);
+    printf("Product: %d\n", product);
+    printf("Quotient: %d\n", quotient);
+    printf("Remainder: %d\n", remainder);
+
+    return 0;
+}
+In this example, the arithmetic operators are used to perform various calculations, and the results are displayed using the printf() function.
+
+Why Arithmetic Operators are Important:
+
+Arithmetic operators are crucial for performing basic mathematical operations in your code. They allow you to manipulate numerical values, which is fundamental for calculations and solving various problems.

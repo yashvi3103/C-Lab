@@ -1,0 +1,43 @@
+25.What is a while Loop?
+
+A while loop is a programming construct that allows you to repeat a block of code as long as a certain condition is true. It's like doing something repeatedly while a specific condition remains valid.
+
+Why Use a while Loop?
+
+You use a while loop when you want to keep performing a task as long as a particular condition holds true. It's great for situations where you don't know in advance how many times you'll need to repeat the action.
+
+How Does a while Loop Work?
+
+A while loop has a single condition that is checked before each iteration. If the condition is true, the loop continues; if it's false, the loop stops.
+
+Structure of a while Loop:
+
+
+while (condition) {
+    // Code to repeat
+}
+Example in Easy Terms:
+
+Suppose you want to print numbers from 1 to 5 using a while loop:
+
+
+#include <stdio.h>
+
+int main() {
+    int i = 1; // Initialization
+
+    while (i <= 5) { // Condition
+        printf("%d\n", i);
+        i++; // Update
+    }
+
+    return 0;
+}
+In this example:
+
+Initialization: int i = 1 sets the starting point.
+Condition: i <= 5 defines when the loop should continue.
+Update: i++ increments i after each iteration.
+Why the while Loop is Important:
+
+The while loop is great for situations where you want to repeat an action while a certain condition remains true. It's useful when you don't know the exact number of repetitions in advance.

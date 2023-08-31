@@ -1,0 +1,36 @@
+12.What are Constants?
+
+Constants are like fixed values that don't change while your program is running. They are used to represent unchanging values, such as numbers, characters, or strings, that are important for your program's logic.
+
+Why Use Constants?
+
+Constants are helpful because they make your code more readable, avoid repetitive values, and allow you to easily update a value in one place if it needs to change.
+
+Examples of Constants:
+
+The value of π (pi) = 3.14159...
+The number of seconds in a minute (60)
+The maximum score in a game (100)
+The letter 'Y' to represent "Yes"
+Declaring and Using Constants:
+
+In programming, you declare a constant using the const keyword. Here's an example in C:
+
+
+#include <stdio.h>
+
+int main() {
+    const int maxScore = 100; // Declare a constant named 'maxScore' with the value 100
+
+    const double pi = 3.14159; // Declare a constant named 'pi' with the value 3.14159
+
+    printf("The maximum score is: %d\n", maxScore); // Display the constant
+    printf("The value of pi is: %.5f\n", pi); // Display another constant
+
+    return 0;
+}
+In this example, the const keyword is used to declare constants. The constants maxScore and pi are used in the printf() function to display their values.
+
+Why Constants are Important:
+
+Constants help make your code more understandable and maintainable by providing clear names for values that are used repeatedly. They also allow you to change a value in one place, which can be handy if you need to update it later.

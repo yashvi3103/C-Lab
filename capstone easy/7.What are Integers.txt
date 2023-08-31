@@ -1,0 +1,39 @@
+7.What are Integers?
+
+Integers are a type of data that represent whole numbers – the numbers without any fractional or decimal part. Integers can be positive, negative, or zero.
+
+Why Use Integers?
+
+Integers are used to represent quantities that are counted, like the number of apples, people's ages, or items in a list. They are essential for performing arithmetic operations and making decisions in your programs.
+
+Examples of Integers:
+
+Number of books on a shelf: 10
+Temperature in degrees Celsius: -5
+People in a room: 25
+Student ID numbers: 202103
+Declaring and Using Integers:
+
+In programming, you declare an integer variable to store integer values. Here's how you do it in C:
+
+
+#include <stdio.h>
+
+int main() {
+    int apples; // Declare an integer variable named 'apples'
+    apples = 5; // Assign the value 5 to the 'apples' variable
+
+    int bananas = 3; // Declare and assign the value 3 to the 'bananas' variable
+
+    int totalFruit = apples + bananas; // Add the values of 'apples' and 'bananas'
+    
+    printf("Total fruit: %d\n", totalFruit); // Display the result
+
+    return 0;
+}
+
+In this example, the %d in the printf() function is a placeholder for an integer value, which is replaced by the value of the totalFruit variable.
+
+Why Integers are Important:
+
+Integers are the building blocks of many calculations in programming. They're used for counting, indexing, looping, and making decisions. Understanding how to work with integers is a fundamental skill in programming!

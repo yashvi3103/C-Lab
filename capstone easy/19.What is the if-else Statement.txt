@@ -1,0 +1,41 @@
+19.What is the "if-else" Statement?
+
+The "if-else" statement is a fundamental building block in programming that allows your program to make decisions and choose different paths of action based on whether a condition is true or false.
+
+Why Use the "if-else" Statement?
+
+The "if-else" statement is used when you want your program to behave differently under different circumstances. It helps you create dynamic and responsive code.
+
+How Does the "if-else" Statement Work?
+
+The "if-else" statement consists of two main parts: the "if" block and the "else" block.
+
+The "if" block contains the code that will be executed if the specified condition is true.
+
+The "else" block contains the code that will be executed if the condition is false.
+
+Example in Easy Terms:
+
+Imagine you're writing a program that decides whether a person is allowed to enter a theme park. Here's how you could use the "if-else" statement:
+
+
+#include <stdio.h>
+
+int main() {
+    int age = 18;
+
+    if (age >= 18) {
+        printf("Welcome to the theme park!\n");
+    } else {
+        printf("Sorry, you need to be at least 18 to enter.\n");
+    }
+
+    return 0;
+}
+In this example, the program checks if the age is greater than or equal to 18. If it is, the "if" block is executed and a welcome message is displayed. If the condition is not met, the "else" block is executed, and a message indicating that the person is not old enough is displayed.
+
+Why the "if-else" Statement is Important:
+
+The "if-else" statement is essential for creating decision-making logic in your programs. It allows your program to choose different actions based on specific conditions, making your code more interactive and versatile.
+
+Remember:

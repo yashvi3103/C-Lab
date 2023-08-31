@@ -1,0 +1,74 @@
+16.What are Comparison Operators?
+
+Comparison operators are symbols in programming that allow you to compare two values and determine if a certain relationship between them is true or false.
+
+Why Use Comparison Operators?
+
+Comparison operators help you make decisions in your program by evaluating whether certain conditions are met. They're essential for creating logic and controlling the flow of your code.
+
+Types of Comparison Operators:
+
+Here are the common comparison operators explained in easy terms:
+
+Equal to (==): Checks if two values are equal.
+
+
+int x = 10;
+int y = 10;
+bool result = (x == y); // Evaluates to true
+Not equal to (!=): Checks if two values are not equal.
+
+
+int a = 5;
+int b = 7;
+bool result = (a != b); // Evaluates to true
+Less than (<): Checks if the value on the left is less than the value on the right.
+
+
+int age = 25;
+bool result = (age < 30); // Evaluates to true
+Greater than (>): Checks if the value on the left is greater than the value on the right.
+
+
+int price = 15;
+bool result = (price > 10); // Evaluates to true
+Less than or equal to (<=): Checks if the value on the left is less than or equal to the value on the right.
+
+
+int quantity = 5;
+bool result = (quantity <= 10); // Evaluates to true
+Greater than or equal to (>=): Checks if the value on the left is greater than or equal to the value on the right.
+
+
+int score = 90;
+bool result = (score >= 80); // Evaluates to true
+Examples:
+
+
+#include <stdio.h>
+
+int main() {
+    int x = 8;
+    int y = 12;
+
+    bool isEqual = (x == y); // Evaluates to false
+    bool isNotEqual = (x != y); // Evaluates to true
+    bool isLessThan = (x < y); // Evaluates to true
+    bool isGreaterThan = (x > y); // Evaluates to false
+    bool isLessThanOrEqual = (x <= y); // Evaluates to true
+    bool isGreaterThanOrEqual = (x >= y); // Evaluates to false
+
+    printf("isEqual: %d\n", isEqual);
+    printf("isNotEqual: %d\n", isNotEqual);
+    printf("isLessThan: %d\n", isLessThan);
+    printf("isGreaterThan: %d\n", isGreaterThan);
+    printf("isLessThanOrEqual: %d\n", isLessThanOrEqual);
+    printf("isGreaterThanOrEqual: %d\n", isGreaterThanOrEqual);
+
+    return 0;
+}
+In this example, comparison operators are used to evaluate different relationships between the values x and y, and the results are displayed using the printf() function.
+
+Why Comparison Operators are Important:
+
+Comparison operators allow you to create conditions and make decisions in your program based on whether certain relationships between values are true or false.

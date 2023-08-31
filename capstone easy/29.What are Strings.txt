@@ -1,0 +1,49 @@
+29.What are Strings?
+
+In programming, a string is a sequence of characters, such as letters, numbers, and symbols. Think of it as a word, a sentence, or even just a single character.
+
+Why Use Strings?
+
+Strings are used to handle text-based data, like names, messages, and any kind of textual information in your programs.
+
+How Do Strings Work?
+
+Strings are usually stored in memory as an array of characters, with a special character called the null terminator ('\0') at the end to mark the string's end.
+
+Example in Easy Terms:
+
+Suppose you want to store and display a person's name:
+
+
+#include <stdio.h>
+
+int main() {
+    char name[10]; // Create an array to hold the name (maximum of 10 characters)
+
+    name[0] = 'J';
+    name[1] = 'o';
+    name[2] = 'h';
+    name[3] = 'n';
+    name[4] = '\0'; // Null terminator
+
+    printf("Name: %s\n", name);
+
+    return 0;
+}
+Using String Literal:
+
+You can simplify the above example by using a string literal:
+
+
+#include <stdio.h>
+
+int main() {
+    char name[] = "John"; // Automatically includes the null terminator
+
+    printf("Name: %s\n", name);
+
+    return 0;
+}
+Why Strings are Important:
+
+Strings allow you to work with textual data, which is a crucial part of many programs. They enable you to create user-friendly interfaces, manage data, and communicate information effectively.

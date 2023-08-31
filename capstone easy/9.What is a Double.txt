@@ -1,0 +1,39 @@
+9.What is a Double?
+
+A "double" is a data type used to store numbers with decimal points. It's called "double" because it provides more precision than the "float" data type, which is another type used for decimal numbers.
+
+Why Use Doubles?
+
+Doubles are used when you need to work with numbers that require a high level of accuracy, such as scientific calculations or financial computations. They can hold larger and more precise decimal values compared to floats.
+
+Examples of Doubles:
+
+Temperature in degrees Celsius: 27.5
+Distance in meters: 10.25
+Weight in kilograms: 68.75
+Declaring and Using Doubles:
+
+In programming, you declare a double variable to store decimal values. Here's how you do it in C:
+
+
+#include <stdio.h>
+
+int main() {
+    double temperature; // Declare a double variable named 'temperature'
+    temperature = 27.5; // Assign the value 27.5 to the 'temperature' variable
+
+    double distance = 10.25; // Declare and assign the value 10.25 to the 'distance' variable
+
+    double totalWeight = 68.75; // Declare and assign the value 68.75 to the 'totalWeight' variable
+    
+    printf("Temperature: %.2f\n", temperature); // Display the result
+    printf("Distance: %.2f\n", distance); // Display another double value
+    printf("Total weight: %.2f\n", totalWeight); // Display yet another double value
+
+    return 0;
+}
+In this example, the %f in the printf() function is a placeholder for a floating-point (decimal) value, which is replaced by the value of the temperature, distance, and totalWeight variables.
+
+Why Doubles are Important:
+
+Doubles provide a way to handle decimal values accurately and with high precision. They are commonly used in scientific calculations, financial applications, and any situation where accuracy is crucial.

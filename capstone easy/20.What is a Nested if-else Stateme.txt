@@ -1,0 +1,43 @@
+20.What is a Nested "if-else" Statement?
+
+A nested "if-else" statement is a way of using multiple levels of "if-else" statements inside each other. It allows your program to make more complex decisions by considering multiple conditions in a structured manner.
+
+Why Use Nested "if-else" Statements?
+
+Nested "if-else" statements are used when you want to handle different scenarios that depend on multiple conditions. They help you create more intricate decision-making logic.
+
+How Does a Nested "if-else" Statement Work?
+
+A nested "if-else" statement involves indenting one "if-else" statement inside another. The inner "if-else" statement is only checked if the condition of the outer "if" statement is true.
+
+Example in Easy Terms:
+
+Let's say you're building a program to determine if a student passes an exam. Depending on their score, you want to provide different feedback:
+
+
+#include <stdio.h>
+
+int main() {
+    int score = 75;
+
+    if (score >= 90) {
+        printf("Excellent! You got an A.\n");
+    } else {
+        if (score >= 70) {
+            printf("Good job! You got a B.\n");
+        } else {
+            if (score >= 50) {
+                printf("You passed with a C.\n");
+            } else {
+                printf("Sorry, you need to retake the exam.\n");
+            }
+        }
+    }
+
+    return 0;
+}
+In this example, the nested "if-else" statements check the student's score and provide feedback based on different ranges of scores.
+
+Why Nested "if-else" Statements are Important:
+
+Nested "if-else" statements allow you to handle more complex decision-making scenarios. They're useful when you have multiple conditions to consider, and you want your program to take different actions based on various factors.
