@@ -1,3 +1,14 @@
+git clone (url)
+//Project run
+//do some changes
 git add .
-git commit -m "ANY MESSAGE"
-git push
+git status
+git commit -m "add any message"
+git pull origin *branch name*
+git push origin *branch name*
+
+//to make new branch
+git checkout -b *branch name*
+
+//to switch branch
+git checkout **branch name
