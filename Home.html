@@ -1,215 +1,136 @@
-  <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('sidebar-collapsed');
+  }
+    </script>
 </head>
-<body class="background-container">
+<body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <div class="sidebar" id="sidebar">
-        <img class="btn sidebar-btn" onclick="toggleSidebar()" src="images/sidebar_btn.jpg">
-        <div class="sidebar-content">
-              <a class="btn btn-light" type="button" href="Home.html" style="margin-top: -111px;margin-left: 40px;"><h2>Home</h2></a>
-                    <!-- <a class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-                      <svg class="bi me-2" width="30" height="24"></svg>
-                      <div class="fs-5 fw-semibold">&nbsp;&nbsp;&nbsp;Welcome Guys</div>
-                    </a> -->
-                    <ul class="list-unstyled ps-0" style="margin-top: -35px;">
-                      <li class="mb-1">
-                        <button onclick="rotate()" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                          <h3>C Basic &nbsp;&nbsp;
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-down" id="imgrotate" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                            </svg>
-                          </h3>
-                        </button>
-                        <div class="collapse" id="home-collapse" style="">
-                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;C Intro</a></li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;Mingw Setup</a></li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;C Structure & Syntax</a></li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;Print Statement</a></li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;New Line Character</a></li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;Comments</a></li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;Variables</a></li>
-                            <li class="mb-1">
-                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Data-types" aria-expanded="false">
-                                &nbsp;&nbsp;Data-types &nbsp;&nbsp;
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" id="imgrotate" viewBox="0 0 16 16">
-                                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                                </svg>
-                              </button>
-                              <div class="collapse" id="Data-types">
-                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Integer</a></li>
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Character</a></li>
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Double</a></li>
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Float</a></li>
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Boolean</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;Constants</a></li>
-                            <li class="mb-1">
-                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Operators" aria-expanded="false">
-                                &nbsp;&nbsp;Operators &nbsp;&nbsp;⨈
-                              </button>
-                              <div class="collapse" id="Operators">
-                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Arithmetic Operators</a></li>
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Assignment Operators</a></li>
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Comparison Operators</a></li>
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Logical Operators</a></li>
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Bitwise Operators</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li class="mb-1">
-                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#If-Else" aria-expanded="false">
-                                &nbsp;&nbsp;If-Else &nbsp;&nbsp;⨈
-                              </button>
-                              <div class="collapse" id="If-Else">
-                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;If-Else</a></li>
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Nested If-Else</a></li>
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Else If</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;Switch Case</a></li>
-                            <li class="mb-1">
-                              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#Loops" aria-expanded="false">
-                                &nbsp;&nbsp;Loops &nbsp;&nbsp;⨈
-                              </button>
-                              <div class="collapse" id="Loops">
-                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;For Loop</a></li>
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;While Loop</a></li>
-                                  <li><a href="#" class="btn rounded">&nbsp;&nbsp;&nbsp;&nbsp;Do-While Loop</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;Break and Continue</a></li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;Arrays</a></li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;Strings</a></li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;User Input</a></li>
-                            <li><a href="#" class="btn rounded">&nbsp;&nbsp;Pointers</a></li>
-
-                          </ul>
-                        </div>
-                      </li>
-                      <!-- <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                          Dashboard
-                        </button>
-                        <div class="collapse" id="dashboard-collapse">
-                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="link-dark rounded">Overview</a></li>
-                            <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                            <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                            <li><a href="#" class="link-dark rounded">Annually</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                          Orders
-                        </button>
-                        <div class="collapse" id="orders-collapse">
-                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="link-dark rounded">New</a></li>
-                            <li><a href="#" class="link-dark rounded">Processed</a></li>
-                            <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                            <li><a href="#" class="link-dark rounded">Returned</a></li>
-                          </ul>
-                        </div>
-                      </li> -->
-                      <li class="border-top my-3"></li>
-                      <li class="mb-1">
-                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                          Account
-                        </button>
-                        <div class="collapse" id="account-collapse">
-                          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="link-dark rounded">New...</a></li>
-                            <li><a href="#" class="link-dark rounded">Profile</a></li>
-                            <li><a href="#" class="link-dark rounded">Settings</a></li>
-                            <li><a href="#" class="link-dark rounded">Sign out</a></li>
-                          </ul>
-                        </div>
-                      </li>
-                    </ul>
-                
-            </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light nav-bg position-sticky">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="Home.html">
-          <img class="btn" src="images/logo.png" style="height: 50px;width: 50px;padding: 0px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                General
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Log-in / Sign-in</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Tutorials
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Exercises
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Code Generator</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Journey Track</a>
-            </li>
-            <li class="nav-item">
-              <button class="btn" onclick="toggleDarkMode()" id="ulNavTextHeading">Dark</button>
-            </li>
+    <div class="navbar">
+        <a href="Home.html"><img class="logo-img" src="images\logo.png" alt=""></a>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            General
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Log-in / Sign-in</a></li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
-      </div>
-    </nav>
-    <div class="home_Data">
-      <center>
-        <h1 class="home_h1">C Language</h1><br>
-        <h3 class="home_h3">Mother of All Programming Languages</h3><br><br><br>
-        <a href="" class="btn home_button">Start Your C Journey</a>
-      </center>
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tutorials
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Exercises
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#">Code Generator</a>
+        </div>
+        <div class="nav-item">
+            <a class="nav-link" href="#">Journey Track</a>
+        </div>
+        <div class="nav-item">
+            <button class="btn" onclick="toggleDarkMode()" id="ulNavTextHeading">Dark</button>
+        </div>
     </div>
+    <div class="main">
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-btn" onclick="toggleSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4vw" height="4vh" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </div>
+            <div class="sidebar-content">
+                <div class="C-Basic">
+                <button class="C-Basic-btn" data-bs-toggle="collapse" data-bs-target="#C-Basic" aria-expanded="false">C Basic ▾</button>
+                <div class="collapse" id="C-Basic">
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">C Intro</a></div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Mingw Setup</a></div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">C Structure & Syntax</a></div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Print Statement</a></div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">New Line Character</a></div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Comments</a></div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Variables</a></div>
+                    <div>&nbsp;&nbsp;
+                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="data-types-btn" data-bs-toggle="collapse" data-bs-target="#Data-types" aria-expanded="false">Data-types ▾</button>
+                        <div class="collapse" id="Data-types">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Integer</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Character</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Double</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Float</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Boolean</a></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Constants</a></div>
+                    <div>&nbsp;&nbsp;
+                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="Operators-btn" data-bs-toggle="collapse" data-bs-target="#Operators" aria-expanded="false">Operators ▾</button>
+                        <div class="collapse" id="Operators">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Arithmetic Operators</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Assignment Operators</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Comparison Operators</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Logical Operators</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Bitwise Operators</a></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;&nbsp;
+                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="if-else-btn" data-bs-toggle="collapse" data-bs-target="#if-else" aria-expanded="false">If-else ▾</button>
+                        <div class="collapse" id="if-else">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">If-Else</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Nested If-Else</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Else If</a></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Switch Case</a></div>
+                    <div>&nbsp;&nbsp;
+                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="loops-btn" data-bs-toggle="collapse" data-bs-target="#loops" aria-expanded="false">Loops ▾</button>
+                        <div class="collapse" id="loops">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Integer</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Character</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Double</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Float</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Boolean</a></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Break and Continue</a></div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Arrays</a></div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Strings</a></div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">User Input</a></div>
+                    <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Pointers</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-content">
+        
+    </div>
+</div>
 </body>
 </html>

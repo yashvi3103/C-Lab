@@ -1,124 +1,80 @@
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;  
-  }
-  .body{
-    padding-left: 300px;
-    overflow-y: scroll;
-    height: 100%;
-  }
-  .sidebar {
-    margin-top: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #f1f1f1;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-    transition: width 0.3s;
-    height: 95%;
-    overflow-y: scroll;
-  }
-  body.dark-mode .sidebar{
-    background-color: blue;
-  }
-  .sidebar::-webkit-scrollbar{
-    width: 1px;
-  }
-  .sidebar::-webkit-scrollbar-track{
-    background-color: #f1f1f1;
-  }
-  .sidebar-btn{
-    height: 50px;
-    width: 60px;
-    background-color: #f1f1f1;
-    margin-right: 150px;
-    /* padding-top: -40px; */
-  }
-  .sidebar-content {
-    padding: 20px;
-  }
-  
-  .toggle-btn {
-    position: fixed;
-    /* bottom: 10px; */
-    top: 10px;
-    left: 30px;
-    transform: translateX(-50%);
-    /* padding: 10px 20px; */
-    /* background-color: #007bff; */
-    /* color: #060505; */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .sidebar-collapsed {
-    width: 60px;
-  }
-  
-  .sidebar-collapsed .sidebar-content {
-    display: none;
-  }
-  .nav-bg{
-    background-color: #f1f1f1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    height: 60px;
-    padding-bottom: 10px;
-  }
 
-  .btn-light{
-    background-color: #f1f1f1;
-    border: none;
-    padding-left: 50px;
-  }
-
-  .btn-light:hover{
-    background-color: #f1f1f1;
-  }
-  .background-container {
-    background-image: url('images/morning_mode.jpg');
-    background-size: cover; /* Scales the image to cover the entire container */
-    background-position: center; /* Centers the image within the container */
-    background-repeat: no-repeat; /* Prevents repeating of the image */
-    /* width: auto; */
-    height: 100vh; /* Set a minimum height for the container (viewport height) */
-}
-
-@media (max-width: 768px) {
-    .background-container {
-        background-size:cover; /* Adjust for smaller screens */
-    }
-}
-.home_Data{
-  padding-top: 125px;
-  padding-left: 75px;
-}
-.home_h1{
-  font-size: 75px;
-  color: #f1f1f1;
-  text-shadow:0 0 7px rgba(0, 0, 0, 0.3);
-}
-.home_h3{
-  font-size: 40px;
-  color: #f1f1f1;
-  text-shadow:0 0 7px rgba(0, 0, 0, 0.3);
-}
-.home_button{
-  background-color: #ffcba5;
-  border: #ffcba5;
-  height: 60px;
-  width: 350px;
-  font-size: 30px;
-  font-weight: 400;
-  border-radius: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-}
-#imgrotate{
-  font: optional;
-}
-body.rotate #imgrotate{
-  transform:rotate(180deg);
-}
+        body{
+            padding: 0;
+            margin: 0;
+            background-image: url('images/morning_mode.jpg');
+            background-size: cover; /* Scales the image to cover the entire container */
+            background-position: center; /* Centers the image within the container */
+            background-repeat: no-repeat;
+            height: 100vh;
+            overflow-y: hidden;
+        }
+        .navbar{
+            display: flex;
+            background-color: #f1f1f1;
+            height: 8vh;
+            align-items: center;
+            justify-content: flex-start;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.26);
+        }
+        .logo-img{
+            position: relative;
+            height: 6vh;
+            width: auto;
+            left: 1vw;
+        }
+        .nav-item{
+            padding-left: 2vw;
+        }
+        .sidebar::-webkit-scrollbar{
+            width: 1px;
+        }
+        .sidebar::-webkit-scrollbar-track{
+            background-color: #f1f1f1;
+        }
+        .sidebar-btn{
+            display: flex;
+            position: relative;
+            top: 2vh;
+            background-color: #f1f1f1;
+        }
+        .sidebar{
+            background-color: #f1f1f1;
+            display: flex;
+            flex-flow: column;
+            width: 15vw;
+            height: 92vh;
+            overflow-y: scroll;
+            overflow-x: hidden
+        }
+        .sidebar-collapsed .sidebar-content{
+            display: none;
+        }
+        .sidebar-collapsed{
+            width: 4vw;
+        }
+        .C-Basic{
+            position: relative;
+            top: 3vh;
+            left: 1vw;
+        }
+        .C-Basic-btn{
+            border:0;
+            font-size: 25px;
+        }
+        .data-types-btn{
+            border:0;
+        }
+        .Operators-btn{
+            border:0;
+        }
+        .if-else-btn{
+            border:0;
+        }
+        .loops-btn{
+            border:0;
+        }
+        .main{
+            display: flex;
+        }
+    
