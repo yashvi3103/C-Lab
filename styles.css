@@ -231,3 +231,34 @@
         .main{
             display: flex;
         }
+<<<<<<< HEAD
+=======
+        .nav-input{
+            border-radius: 5px;
+            align-self: flex-end;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Kay+Pho+Du&display=swap');
+        .text-content{
+            display: flex;
+        }
+        .example-box{
+            display: flex;
+            height: fit-content;
+            justify-content: left;
+            background-color: #f1f1f1;
+            padding: 1vb;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.384);
+            border-radius: 10px;
+            flex-direction: column;
+        }
+        .example-normal-text{
+            font-size: 16px;
+            font-family: 'Kay Pho Du', serif;       
+        }
+        .example-comment-text{
+            font-size: 15px;
+            font-family:'Kay Pho Du', serif;
+            color: rgb(117, 117, 117);    
+            font-style: italic;   
+        }
+>>>>>>> 06f1ee351ba43939b5c6591cabcabd060c341cd4
