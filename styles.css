@@ -1,22 +1,59 @@
 
+        /* *{
+            font-family: 'Dosis', sans-serif;
+            font-weight: 500;
+        } */
         body{
             padding: 0;
             margin: 0;
-            background-image: url('images/morning_mode.jpg');
+            /* background-image: url('images/morning_mode.jpg'); */
+            background-image: url('images/Spirit of Fun Window Anime Expo.jpg');
             background-size: cover; /* Scales the image to cover the entire container */
             background-position: center; /* Centers the image within the container */
             background-repeat: no-repeat;
-            height: 100vh;
+            height: 100%;
             overflow-y: hidden;
+        }
+        body.dark-mode{
+            /* background-color: blanchedalmond; */
+            background-image: url('C:/Users/Orion/Downloads/night time.png');
+            /* background-image: url('images/night.png'); */
+            /* background-image: url('C:/Users/Orion/Downloads/stray night.jpg'); */
+            /* background-image: none; */
         }
         .navbar{
             display: flex;
             background-color: #f1f1f1;
             height: 8vh;
+            /* background-color: transparent; */
             align-items: center;
+
             justify-content: flex-start;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.26);
         }
+        body.dark-mode .navbar{
+            display: flex;
+            /* background-color: #030712; */
+            /* background-color: #03252A; */
+            background-color: transparent;
+            height: 8vh;
+            color: rgb(227, 232, 237);
+            align-items: center;
+            justify-content: flex-start;
+            box-shadow: 0 1px 5px rgba(186, 172, 172, 0.26);
+        }
+        .dropdown-toggle:hover{
+            color:#16bfc8 ;
+        }
+        body.dark-mode .dropdown-toggle:hover{
+            border: 2px solid #28B5A2;
+            border-radius: 6px;
+            color:#16bfc8 ;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+}
         .logo-img{
             position: relative;
             height: 6vh;
@@ -32,22 +69,77 @@
         .sidebar::-webkit-scrollbar-track{
             background-color: #f1f1f1;
         }
+        body.dark-mode .sidebar::-webkit-scrollbar-track{
+            /* background-color: #030712; */
+            background-color: transparent;
+        }
         .sidebar-btn{
             display: flex;
             position: relative;
             top: 2vh;
             background-color: #f1f1f1;
         }
-        .sidebar{
-            background-color: #f1f1f1;
+        .btn{
+            list-style: none;
+
+            /* color: #f1f1f1; */
+        }
+        .btn:hover{
+            /* color:#16bfc8; */
+            color: #878483;
+           
+            /* background-image: linear-gradient(red , green); */
+            /* list-style: none; */
+
+            /* color: #f1f1f1; */
+        }
+        body.dark-mode .btn{
+            list-style: none;
+            color: #f1f1f1;
+        }
+        body.dark-mode .btn:hover{
+            list-style: none;
+            border: 2px solid #28B5A2;
+            color: #28B5A2;
+            /* color: #4067BF; */
+        }
+        body.dark-mode .sidebar-btn{
+            color: #f1f1f1;
             display: flex;
+            position: relative;
+            top: 2vh;
+            /* background-color: #030712; */
+        }
+        .sidebar{
+            display: flex;
+            background-color: #f1f1f1;
             flex-flow: column;
             width: 15vw;
             height: 92vh;
             overflow-y: scroll;
             overflow-x: hidden;
         }
+        body.dark-mode .sidebar{
+            box-shadow: 0 1px 5px rgba(162, 156, 156, 0.26);
+            background-color: transparent;
+            /* filter: blur(2px); */
+            /*background-color: #030712;
+            */color: #f1f1f1;
+            display: flex;
+            flex-flow: column;
+            width: 15vw;
+            height: 92vh;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            /* -webkit-filter: blur(2px); */
+}
         .C-Basic{
+            position: relative;
+            top: 3vh;
+            left: 1vw;
+        }
+        .C-Basic:hover{
+            
             position: relative;
             top: 3vh;
             left: 1vw;
@@ -56,9 +148,47 @@
             border:0;
             font-size: 25px;
         }
+        .C-Basic-btn:hover{
+            color: #878483;
+            border:0;
+            font-size: 25px;
+        }
+        body.dark-mode .C-Basic-btn{
+            color: #f1f1f1;
+            background-color: transparent;
+            border:0;
+            font-size: 25px;
+        }
+        body.dark-mode .C-Basic-btn:hover{
+            color: #28B5A2;
+            border: 2px solid #28B5A2;
+            background-color:transparent;
+            border:0;
+            font-size: 25px;
+        }
+        body.dark-mode .dropdown-item{
+            background-color: #030712;
+            color: #f1f1f1; 
+            border-color: #f1f1f1;
+        }
+        body.dark-mode .dropdown-menu{
+            background-color: #030712;
+            color: #f1f1f1; 
+            border-color: #f1f1f1;
+        }
         .data-types-btn{
             border:0;
         }
+        body.dark-mode .data-types-btn{
+            color: #f1f1f1;
+            background-color: #030712;
+            border:0;
+        }
+        body.dark-mode .data-types-btn:hover{
+            color: #16bfc8;
+            background-color: #030712;
+            border:0;
+}
         .Operators-btn{
             border:0;
         }
@@ -68,7 +198,36 @@
         .loops-btn{
             border:0;
         }
+        body.dark-mode .Operators-btn{
+            border:0;
+            color: #f1f1f1;
+            background-color: #030712;
+        }
+        body.dark-mode .if-else-btn{
+            border:0;
+            color: #f1f1f1;
+            background-color: #030712;
+        }
+        body.dark-mode .loops-btn{
+            border:0;
+            color: #f1f1f1;
+            background-color: #030712;
+        }
+        body.dark-mode .Operators-btn:hover{
+            border:0;
+            color: #16bfc8;
+            background-color: #030712;
+        }
+        body.dark-mode .if-else-btn:hover{
+            border:0;
+            color: #16bfc8;
+            background-color: #030712;
+        }
+        body.dark-mode .loops-btn:hover{
+            border:0;
+            color: #16bfc8;
+            background-color: #030712;
+        }
         .main{
             display: flex;
         }
-    

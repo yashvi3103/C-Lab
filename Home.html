@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+</head>
+<body><div class="bg_img">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
     <div class="navbar">
         <a href="Home.html"><img class="logo-img" src="images\logo.png" alt=""></a>
         <div class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            General
+            &nbsp;  General          
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -24,8 +28,8 @@
           </ul>
         </div>
         <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Tutorials
+          <a class="nav-link dropdown-toggle btn" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           &nbsp; Tutorials
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -46,13 +50,14 @@
           </ul>
         </div>
         <div class="nav-item">
-          <a class="nav-link" href="#">Code Generator</a>
+          <a class=" btn nav-link" href="#">Code Generator</a>
         </div>
         <div class="nav-item">
-            <a class="nav-link" href="#">Journey Track</a>
+            <a class="btn nav-link" href="#">&nbsp; Journey Track &nbsp; </a>
         </div>
         <div class="nav-item">
-            <button class="btn" onclick="toggleDarkMode()" id="ulNavTextHeading">Dark</button>
+            <button class="btn" onclick="toggleDarkMode()" 
+            id="ulNavTextHeading">Dark</button>
         </div>
     </div>
     <div class="main">
@@ -60,7 +65,7 @@
             <div class="sidebar-content">
                 <div class="C-Basic">
                 <button class="C-Basic-btn" data-bs-toggle="collapse" data-bs-target="#C-Basic" aria-expanded="false">C Basic ▾</button>
-                <div class="collapse" id="C-Basic">
+                <div class="dropdown" id="C-Basic">
                     <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">C Intro</a></div>
                     <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Mingw Setup</a></div>
                     <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">C Syntax</a></div>
@@ -69,13 +74,13 @@
                     <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Comments</a></div>
                     <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Variables</a></div>
                     <div>&nbsp;&nbsp;
-                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="data-types-btn" data-bs-toggle="collapse" data-bs-target="#Data-types" aria-expanded="false">Data-types ▾</button>
-                        <div class="collapse" id="Data-types">
-                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Integer</a></div>
-                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Character</a></div>
-                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Double</a></div>
-                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Float</a></div>
-                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Boolean</a></div>
+                      <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="data-types-btn" data-bs-toggle="collapse" data-bs-target="#Data-types" aria-expanded="false">Data-types ▾</button>
+                      <div class="collapse" id="Data-types">                        
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Integer</a></div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Character</a></div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Double</a></div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Float</a></div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Boolean</a></div>
                         </div>
                     </div>
                     <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Constants</a></div>
@@ -101,11 +106,10 @@
                     <div>&nbsp;&nbsp;
                         <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="loops-btn" data-bs-toggle="collapse" data-bs-target="#loops" aria-expanded="false">Loops ▾</button>
                         <div class="collapse" id="loops">
-                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Integer</a></div>
-                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Character</a></div>
-                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Double</a></div>
-                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Float</a></div>
-                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Boolean</a></div>
+                          <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">For Loop</a></div>
+                          <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">While Loop</a></div>
+                          <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Do-While Loop</a></div>
+                          <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px;" class="btn rounded">Infinity Loop</a></div>
                         </div>
                     </div>
                     <div>&nbsp;&nbsp;<a href="#" style="font-size: 19px;" class="btn rounded">Break and Continue</a></div>
@@ -121,5 +125,7 @@
         
     </div>
 </div>
-</body>
+
+
+</div></body>
 </html>

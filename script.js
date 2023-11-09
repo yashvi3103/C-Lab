@@ -10,8 +10,12 @@ function rotate() {
   const image  = document.querySelector('body');
   image.classList.toggle('rotate')
 }
-
-      
+// const dark = document.querySelector('body')
+// body.addEventListener("click",()=>{
+//   console.log("ok")
+  // const body = document.querySelector('body');
+  // body.classList.toggle('dark-mode');
+// })
       function toggleDarkMode() {
     const body = document.querySelector('body');
     body.classList.toggle('dark-mode');
