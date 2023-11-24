@@ -43,12 +43,12 @@
             box-shadow: 0 1px 5px rgba(186, 172, 172, 0.26);
         }
         .dropdown-toggle:hover{
-            color:#16bfc8 ;
+            color:#878483;
         }
         body.dark-mode .dropdown-toggle:hover{
-            border: 2px solid #28B5A2;
+            /* border: 2px solid #28B5A2; */
             border-radius: 6px;
-            color:#16bfc8 ;
+            color:#28B5A2;
             -webkit-border-radius: 6px;
             -moz-border-radius: 6px;
             -ms-border-radius: 6px;
@@ -60,6 +60,22 @@
             width: auto;
             left: 1vw;
         }
+        .logo-img:hover{
+            position: relative;
+            height: 6vh;
+            width: auto;
+            left: 1vw;
+            filter: drop-shadow(-4px 1px 3px #000000);
+
+}
+body.dark-mode  .logo-img:hover{
+            position: relative;
+            height: 6vh;
+            width: auto;
+            left: 1vw;
+            /* filter: drop-shadow(-4px 2px 3px #000000);
+            -webkit-filter: drop-shadow(-4px 2px 3px #000000); */
+}
         .nav-item{
             padding-left: 2vw;
         }
@@ -87,6 +103,7 @@
         .btn:hover{
             /* color:#16bfc8; */
             color: #878483;
+            overflow: none;
            
             /* background-image: linear-gradient(red , green); */
             /* list-style: none; */
@@ -99,7 +116,7 @@
         }
         body.dark-mode .btn:hover{
             list-style: none;
-            border: 2px solid #28B5A2;
+            /* border: 2px solid #28B5A2; */
             color: #28B5A2;
             /* color: #4067BF; */
         }
@@ -161,33 +178,73 @@
         }
         body.dark-mode .C-Basic-btn:hover{
             color: #28B5A2;
-            border: 2px solid #28B5A2;
+            /* border: 2px solid #28B5A2; */
             background-color:transparent;
             border:0;
             font-size: 25px;
         }
         body.dark-mode .dropdown-item{
-            background-color: #030712;
+            background-color: #17685d;
             color: #f1f1f1; 
-            border-color: #f1f1f1;
+            border-color: #06352e;
+        }
+        body.dark-mode .dropdown-item:hover{
+            background-color: #17685d;
+            color: #28B5A2;
+            
+        }
+        .dropdown-item{
+            background-color: #f1f1f1;
+            color: #000000; 
+            border-color: #000000;
+        }
+ .dropdown-item:hover{
+            color: #878483;
+            
         }
         body.dark-mode .dropdown-menu{
-            background-color: #030712;
+            border-color: #06352e;
+            color: #28B5A2;
+            background-color: #17685d;
             color: #f1f1f1; 
-            border-color: #f1f1f1;
+        }
+        .dropdown-menu{
+            border-color: #000000;
+            box-shadow:  1px 2px 4px black;
+            background-color: #f1f1f1;
         }
         .data-types-btn{
             border:0;
         }
+        .data-types-btn:hover{
+            color: #878483;
+            border:0;
+        }
         body.dark-mode .data-types-btn{
             color: #f1f1f1;
-            background-color: #030712;
+            background-color: transparent;
             border:0;
         }
         body.dark-mode .data-types-btn:hover{
             color: #16bfc8;
-            background-color: #030712;
+            background-color: transparent;
             border:0;
+}
+.nav-input{
+    font-style: italic;
+    color: #ffffff;
+}
+body.dark-mode .nav-input{
+    font-style: italic;
+    border: solid #17685d ;
+    background-color: transparent;
+    color: #ffffff;
+}
+body.dark-mode .nav-input:hover{
+    font-style: italic;
+    border: solid #28B5A2 ;
+    background-color: transparent;
+    color: #ffffff;
 }
         .Operators-btn{
             border:0;
@@ -198,41 +255,52 @@
         .loops-btn{
             border:0;
         }
+        .Operators-btn:hover{
+            color:#878483 ;
+            border:0;
+        }
+        .if-else-btn:hover{
+            color:#878483 ;
+            border:0;
+        }
+        .loops-btn:hover{
+            color:#878483 ;
+            border:0;
+        }
         body.dark-mode .Operators-btn{
             border:0;
             color: #f1f1f1;
-            background-color: #030712;
+            background-color: transparent;
         }
         body.dark-mode .if-else-btn{
             border:0;
             color: #f1f1f1;
-            background-color: #030712;
+            background-color: transparent;
         }
         body.dark-mode .loops-btn{
             border:0;
             color: #f1f1f1;
-            background-color: #030712;
+            background-color: transparent;
         }
         body.dark-mode .Operators-btn:hover{
             border:0;
             color: #16bfc8;
-            background-color: #030712;
+            background-color: transparent;
         }
         body.dark-mode .if-else-btn:hover{
             border:0;
             color: #16bfc8;
-            background-color: #030712;
+            background-color: transparent;
         }
         body.dark-mode .loops-btn:hover{
             border:0;
+            overflow: hidden;
             color: #16bfc8;
-            background-color: #030712;
+            background-color: transparent;
         }
         .main{
             display: flex;
         }
-<<<<<<< HEAD
-=======
         .nav-input{
             border-radius: 5px;
             align-self: flex-end;
@@ -251,8 +319,23 @@
             border-radius: 10px;
             flex-direction: column;
         }
+        body.dark-mode .example-box{
+            display: flex;
+            height: fit-content;
+            justify-content: left;
+            background-color: #06352e;
+            padding: 1vb;
+            box-shadow: 2px 1px 5px rgba(94, 94, 94, 0.384);
+            border-radius: 10px;
+            flex-direction: column;
+        }
         .example-normal-text{
             font-size: 16px;
+            font-family: 'Kay Pho Du', serif;       
+        }
+        body.dark-mode .example-normal-text{
+            font-size: 16px;
+            color: #28B5A2;
             font-family: 'Kay Pho Du', serif;       
         }
         .example-comment-text{
@@ -261,4 +344,9 @@
             color: rgb(117, 117, 117);    
             font-style: italic;   
         }
->>>>>>> 06f1ee351ba43939b5c6591cabcabd060c341cd4
+        body.dark-mode .example-comment-text{
+            font-size: 15px;
+            font-family:'Kay Pho Du', serif;
+            color: #0f7467;    
+            font-style: italic;   
+        }
