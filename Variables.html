@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body><div class="bg_img">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
+    <div class="navbar">
+        <a href="Home.html"><img class="logo-img" src="images\logo.png" alt=""></a>
+        <div class="nav-item dropdown">
+          <button class="btn">
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              &nbsp;  General          
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Merit List</a></li>
+              <li><a class="dropdown-item" href="#">Jobs</a></li>
+              <li><a class="dropdown-item" href="#">Requests</a></li>
+              <li><a class="dropdown-item" href="#">Job Offers</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="login.html">Log-in / Sign-in</a></li>
+            </ul>
+          </button>
+        </div>
+        <div class="nav-item ">
+          <button class="btn">
+       <a class="nav-link " href="Code-generator.html">Code Generator</a>
+      </button>
+        </div>
+        <div class="nav-item">
+ 
+ <button class="btn">
+   <a class="nav-link " href="journey-track.html">Journey Track</a>
+</button>
+
+        </div>
+        <div class="nav-item">
+            <button class="btn" onclick="toggleDarkMode()" 
+            id="ulNavTextHeading">Dark</button>
+        </div>
+        <div class="nav-item">
+          <button class="btn">
+            <a class="nav-link " href="login.html">Sign-in</a>
+          </button>
+        </div>
+        <div class="nav-item">
+            <input type="text" class="nav-input" placeholder="Search for Topic" name="" id="">
+        </div>
+        <div class="nav-item">
+          <button class="btn">
+            <a class="nav-link search-btn " href="#">Search</a>
+          </button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <div class="C-Basic">
+                <button class="C-Basic-btn" data-bs-toggle="collapse" data-bs-target="#C-Basic" aria-expanded="true">C Basic ▾</button>
+                <div class="collapsed" id="C-Basic">
+                    <div>&nbsp;&nbsp;<a href="C-Intro.html" style="font-size: 19px;" class="btn rounded">C Intro</a></div>
+                    <div>&nbsp;&nbsp;<a href="Mingw-setup.html" style="font-size: 19px;" class="btn rounded">Mingw Setup</a></div>
+                    <div>&nbsp;&nbsp;<a href="C-Syntax.html" style="font-size: 19px;" class="btn rounded">C Syntax</a></div>
+                    <div>&nbsp;&nbsp;<a href="Print-statement.html" style="font-size: 19px;" class="btn rounded">Print Statement</a></div>
+                    <div>&nbsp;&nbsp;<a href="New-Line-Character.html" style="font-size: 19px;" class="btn rounded">New Line Character</a></div>
+                    <div>&nbsp;&nbsp;<a href="Comments.html" style="font-size: 19px;" class="btn rounded">Comments</a></div>
+                    <div>&nbsp;&nbsp;<a href="Variables.html" style="font-size: 19px;" class="btn rounded">Variables</a></div>
+                    <div>&nbsp;&nbsp;
+                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="data-types-btn" data-bs-toggle="collapse" data-bs-target="#Data-types" aria-expanded="false">Data-types ▾</button>
+                        <div class="collapse " id="Data-types">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Data-types-integer.html" style="font-size: 16px;" class="btn rounded">Integer</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Data-types-character.html" style="font-size: 16px;" class="btn rounded">Character</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Data-types-double.html" style="font-size: 16px;" class="btn rounded">Double</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Data-types-float.html" style="font-size: 16px;" class="btn rounded">Float</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Data-types-boolean.html" style="font-size: 16px;" class="btn rounded">Boolean</a></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;&nbsp;<a href="Constants.html
+                      " style="font-size: 19px;" class="btn rounded">Constants</a></div>
+                    <div>&nbsp;&nbsp;
+                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="Operators-btn" data-bs-toggle="collapse" data-bs-target="#Operators" aria-expanded="false">Operators ▾</button>
+                        <div class="collapse" id="Operators">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Operators-Arithmetic.html" style="font-size: 16px;" class="btn rounded">Arithmetic Operators</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Operators-Assignment.html" style="font-size: 16px;" class="btn rounded">Assignment Operators</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Operators-Comparision.html" style="font-size: 16px;" class="btn rounded">Comparison Operators</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Operators-Logical.html" style="font-size: 16px;" class="btn rounded">Logical Operators</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Operators-Bitwise.html" style="font-size: 16px;" class="btn rounded">Bitwise Operators</a></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;&nbsp;
+                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="if-else-btn btn" data-bs-toggle="collapse" data-bs-target="#if-else" aria-expanded="false">If-else ▾</button>
+                        <div class="collapse" id="if-else">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="if-else.html" style="font-size: 16px;" class="btn rounded">If-Else</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="nested-if-else.html" style="font-size: 16px;" class="btn rounded">Nested If-Else</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="else-if.html" style="font-size: 16px;" class="btn rounded">Else If</a></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;&nbsp;<a href="Switch-case.html" style="font-size: 19px;" class="btn rounded">Switch Case</a></div>
+                    <div>&nbsp;&nbsp;
+                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="loops-btn" data-bs-toggle="collapse" data-bs-target="#loops" aria-expanded="false">Loops ▾</button>
+                        <div class="collapse" id="loops">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Loop-for.html" style="font-size: 16px;" class="btn rounded">For loop</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Loop-while.html" style="font-size: 16px;" class="btn rounded">While loop</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Loop-do-while.html" style="font-size: 16px;" class="btn rounded">Do-while loop</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Loop-infinity.html" style="font-size: 16px;" class="btn rounded">Infinity loop</a></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;&nbsp;<a href="Break-and-continue.html" style="font-size: 19px;" class="btn rounded">Break and Continue</a></div>
+                    <div>&nbsp;&nbsp;<a href="Arrays.html" style="font-size: 19px;" class="btn rounded">Arrays</a></div>
+                    <div>&nbsp;&nbsp;<a href="Strings.html" style="font-size: 19px;" class="btn rounded">Strings</a></div>
+                    <div>&nbsp;&nbsp;<a href="User-input.html" style="font-size: 19px;" class="btn rounded">User Input</a></div>
+                    <div>&nbsp;&nbsp;<a href="Pointers.html" style="font-size: 19px;" class="btn rounded">Pointers</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="text-content">
+      <h1>About:</h1><br>
+      <h3><li>What are Variables?</li> </h3>
+      <p>Think of a variable as a labeled box or container that holds information. It's like giving a name to a piece of data so you can use and manipulate it easily in your program.</p>
+      <hr>
+      <h3><li>Why Use Variables?</li></h3> 
+      <p>Variables allow you to store and work with different types of data, such as numbers, text, and more. They make your code more flexible and help you avoid repeating the same value multiple times.
+      </p>
+      <hr>
+      <h1>How to Declare Variables:</h1>
+      <p>In programming, you declare a variable to create a named storage space for data. In C, you declare a variable by specifying its data type and name:</p>
+   
+    <div class="example-box">
+        // Declare an integer variable named 'age'<br>
+             int age;<br>
+            // Declare a floating-point variable named 'temperature'     <br>
+            float temperature;   <br>
+            // Declare a character variable named 'grade'    <br>
+         char grade; 
+               
+                
+             
+              
+</div>
+  </p> <hr>
+  <h3> # Assigning Values to Variables:</h3>
+      After declaring a variable, you can give it a value using the assignment operator =:</p>
+      <div class="example-box">
+        age = 25;</b> // Assign the value 25 to the 'age' variable <br>
+        temperature = 98.6; </b>// Assign the value 98.6 to the 'temperature' variable <br>
+        grade = 'A'; </b>// Assign the character 'A' to the 'grade' variable <br>
+        You can also declare and assign a value in a single step:
+<br>
+        int apples = 5; // Declare and assign the value 5 to the 'apples' variable
+        Using Variables: 
+            <div class="example-comment-text">
+                Once you've declared and assigned values to variables, you can use them in your program:
+              </div>
+             
+        
+        </div>
+        
+        <hr>
+        <div class="example-box">
+            #include &lt;stdio.h&gt; <br>
+            int main() { <br>
+             int apples = 5;<br>
+             int bananas = 3; <br>
+             int totalFruit = apples + bananas; // Perform a calculation using variables <br>
+             printf("Total fruit: %d\n", totalFruit); // Display the result} 
+             <div class="example-comment-text">
+                In this example, the totalFruit variable is used to store the sum of apples and bananas, and then it's displayed using the printf() function.
+             </div>
+        </div>
+<hr>
+        <h3>Tips for Effective Variables:
+           </h3>
+           <p>Choose Descriptive Names:</b> Use meaningful names for your variables to make your code easier to understand. <br> For example, userName is clearer than uN.
+
+           </p>
+           <p>Use Appropriate Data Types:</b> If you change your code, update the comments to match the changes.
+           </p>
+           <p>Update Variables:</b>You can change the value of a variable as your program runs. For example, you could update the age variable to represent someone's age at a later point in the program.</p>
+           <p>Pay Attention to Scope:</b> Variables are only accessible within the block of code where they're defined. This is known as their "scope."</p>
+        
+        </div>
+    </div>
+    </div>
+        </body>
+        </html>

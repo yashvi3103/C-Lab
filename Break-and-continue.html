@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body><div class="bg_img">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script> -->
+    <div class="navbar">
+        <a href="Home.html"><img class="logo-img" src="images\logo.png" alt=""></a>
+        <div class="nav-item dropdown">
+          <button class="btn">
+
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              &nbsp;  General          
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Merit List</a></li>
+              <li><a class="dropdown-item" href="#">Jobs</a></li>
+              <li><a class="dropdown-item" href="#">Requests</a></li>
+              <li><a class="dropdown-item" href="#">Job Offers</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="login.html">Log-in / Sign-in</a></li>
+            </ul>
+          </button>
+        </div>
+        <div class="nav-item ">
+          <button class="btn">
+       <a class="nav-link " href="Code-generator.html">Code Generator</a>
+      </button>
+        </div>
+        <div class="nav-item">
+ 
+ <button class="btn">
+   <a class="nav-link " href="journey-track.html">Journey Track</a>
+</button>
+
+        </div>
+        <div class="nav-item">
+            <button class="btn" onclick="toggleDarkMode()" 
+            id="ulNavTextHeading">Dark</button>
+        </div>
+        <div class="nav-item">
+          <button class="btn">
+            <a class="nav-link " href="login.html">Sign-in</a>
+          </button>
+        </div>
+        <div class="nav-item">
+            <input type="text" class="nav-input" placeholder="Search for Topic" name="" id="">
+        </div>
+        <div class="nav-item">
+          <button class="btn">
+            <a class="nav-link search-btn " href="#">Search</a>
+          </button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <div class="C-Basic">
+                <button class="C-Basic-btn" data-bs-toggle="collapse" data-bs-target="#C-Basic" aria-expanded="true">C Basic ▾</button>
+                <div class="collapsed" id="C-Basic">
+                    <div>&nbsp;&nbsp;<a href="C-Intro.html" style="font-size: 19px;" class="btn rounded">C Intro</a></div>
+                    <div>&nbsp;&nbsp;<a href="Mingw-setup.html" style="font-size: 19px;" class="btn rounded">Mingw Setup</a></div>
+                    <div>&nbsp;&nbsp;<a href="C-Syntax.html" style="font-size: 19px;" class="btn rounded">C Syntax</a></div>
+                    <div>&nbsp;&nbsp;<a href="Print-statement.html" style="font-size: 19px;" class="btn rounded">Print Statement</a></div>
+                    <div>&nbsp;&nbsp;<a href="New-Line-Character.html" style="font-size: 19px;" class="btn rounded">New Line Character</a></div>
+                    <div>&nbsp;&nbsp;<a href="Comments.html" style="font-size: 19px;" class="btn rounded">Comments</a></div>
+                    <div>&nbsp;&nbsp;<a href="Variables.html" style="font-size: 19px;" class="btn rounded">Variables</a></div>
+                    <div>&nbsp;&nbsp;
+                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="data-types-btn" data-bs-toggle="collapse" data-bs-target="#Data-types" aria-expanded="false">Data-types ▾</button>
+                        <div class="collapse " id="Data-types">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Data-types-integer.html" style="font-size: 16px;" class="btn rounded">Integer</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Data-types-character.html" style="font-size: 16px;" class="btn rounded">Character</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Data-types-double.html" style="font-size: 16px;" class="btn rounded">Double</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Data-types-float.html" style="font-size: 16px;" class="btn rounded">Float</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Data-types-boolean.html" style="font-size: 16px;" class="btn rounded">Boolean</a></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;&nbsp;<a href="Constants.html
+                      " style="font-size: 19px;" class="btn rounded">Constants</a></div>
+                    <div>&nbsp;&nbsp;
+                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="Operators-btn" data-bs-toggle="collapse" data-bs-target="#Operators" aria-expanded="false">Operators ▾</button>
+                        <div class="collapse" id="Operators">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Operators-Arithmetic.html" style="font-size: 16px;" class="btn rounded">Arithmetic Operators</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Operators-Assignment.html" style="font-size: 16px;" class="btn rounded">Assignment Operators</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Operators-Comparision.html" style="font-size: 16px;" class="btn rounded">Comparison Operators</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Operators-Logical.html" style="font-size: 16px;" class="btn rounded">Logical Operators</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Operators-Bitwise.html" style="font-size: 16px;" class="btn rounded">Bitwise Operators</a></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;&nbsp;
+                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="if-else-btn btn" data-bs-toggle="collapse" data-bs-target="#if-else" aria-expanded="false">If-else ▾</button>
+                        <div class="collapse" id="if-else">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="if-else.html" style="font-size: 16px;" class="btn rounded">If-Else</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="nested-if-else.html" style="font-size: 16px;" class="btn rounded">Nested If-Else</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="else-if.html" style="font-size: 16px;" class="btn rounded">Else If</a></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;&nbsp;<a href="Switch-case.html" style="font-size: 19px;" class="btn rounded">Switch Case</a></div>
+                    <div>&nbsp;&nbsp;
+                        <button style="font-size: 19px;padding-top: 1vh;padding-bottom: 1vh;" class="loops-btn" data-bs-toggle="collapse" data-bs-target="#loops" aria-expanded="false">Loops ▾</button>
+                        <div class="collapse" id="loops">
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Loop-for.html" style="font-size: 16px;" class="btn rounded">For loop</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Loop-while.html" style="font-size: 16px;" class="btn rounded">While loop</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Loop-do-while.html" style="font-size: 16px;" class="btn rounded">Do-while loop</a></div>
+                            <div>&nbsp;&nbsp;&nbsp;&nbsp;<a href="Loop-infinity.html" style="font-size: 16px;" class="btn rounded">Infinity loop</a></div>
+                        </div>
+                    </div>
+                    <div>&nbsp;&nbsp;<a href="Break-and-continue.html" style="font-size: 19px;" class="btn rounded">Break and Continue</a></div>
+                    <div>&nbsp;&nbsp;<a href="Arrays.html" style="font-size: 19px;" class="btn rounded">Arrays</a></div>
+                    <div>&nbsp;&nbsp;<a href="Strings.html" style="font-size: 19px;" class="btn rounded">Strings</a></div>
+                    <div>&nbsp;&nbsp;<a href="User-input.html" style="font-size: 19px;" class="btn rounded">User Input</a></div>
+                    <div>&nbsp;&nbsp;<a href="Pointers.html" style="font-size: 19px;" class="btn rounded">Pointers</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="BOX_DATA">
+    <div class="text-content">
+      <h1>About:</h1><br>
+      
+      <h3><li>What is "break"?</li></h3>
+      <p>"Break" is a keyword in programming that allows you to immediately exit a loop, interrupting its execution. It's like a stop button for the loop.</p>
+       <hr>
+      <h3><li>Why Use "break"?</li></h3>
+      <p>You use "break" when you want to prematurely end a loop before it completes all its iterations. It's handy for stopping a loop when a certain condition is met.</p>
+      <hr>
+      <h3># Example in easy terms:</h3>
+      <p>Suppose you want to find the first even number in a list of integers: </p>
+      
+      <div class="example-box">
+        <div class="example-normal-text">
+            #include &lt;stdio.h&gt;
+              
+              int main() { <br>
+                int numbers[] = {1, 3, 4, 7, 10, 15};<br>
+                int length = sizeof(numbers) / sizeof(numbers[0]);<br>
+                int firstEven = -1; // Initialize to a value that indicates no even number found<br>
+            
+                for (int i = 0; i < length; i++) {<br>
+                    if (numbers[i] % 2 == 0) {<br>
+                        firstEven = numbers[i];<br>
+                        break; // Exit the loop as soon as the first even number is found<br>
+                    }<br>
+                }<br>
+            
+                if (firstEven != -1) {<br>
+                    printf("The first even number is: %d\n", firstEven);<br>
+                } else {<br>
+                    printf("No even number found.\n");<br>
+                }<br>
+            
+                return 0;<br>
+            }<br>
+            
+        </div>
+        <div class="example-comment-text">
+            <p>In this example, the "break" statement is used to exit the loop as soon as the first even number is found.</p>
+            <hr>
+        </div>
+    </div>
+    <hr><hr>
+       <h3><li>What is "continue"?</li></h3> 
+       <p>"Continue" is a keyword in programming that allows you to skip the rest of the current iteration of a loop and move on to the next iteration. It's like a "skip" button for the current loop cycle.</p>
+       <hr>
+       <h3><li>Why Use "continue"?</li></h3>
+       <p>You use "continue" when you want to skip certain iterations of a loop based on a condition, while allowing the loop to continue executing.</p>
+<hr>
+       <h3># Example in easy terms:</h3>
+       <p>Suppose you want to find the first odd numbers in a list of integers: </p>
+     
+       <div class="example-box">
+      <div class="example-normal-text">
+        #include &lt;stdio.h&gt;<br>
+            
+        int main() {<br>
+            int numbers[] = {2, 5, 8, 11, 14, 17};<br>
+            int length = sizeof(numbers) / sizeof(numbers[0]);<br>
+        
+            for (int i = 0; i < length; i++) {<br>
+                if (numbers[i] % 2 == 0) {<br>
+                    continue; // Skip even numbers, move to the next iteration<br>
+                }<br>
+                printf("%d is an odd number.\n", numbers[i]);<br>
+            }<br>
+        
+            return 0;<br>
+        }<br>
+      
+      
+      </div>
+      <div class="example-comment-text">
+        <p>In this example, the "continue" statement is used to skip the print statement for even numbers and move on to the next iteration.</p>
+        <hr>
+      </div>
+  </div>
+  <hr>
+     <h3># Why "break" and "continue" are Important:</h3>
+     <p>"Break" and "continue" statements offer fine-grained control over loop behavior. "Break" allows you to exit a loop prematurely, while "continue" lets you skip specific iterations.</p>
+
+</div>
+
+
+</div>
+</div>
+
+</div></body>
+</html>
