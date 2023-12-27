@@ -224,6 +224,23 @@ body.dark-mode  .logo-img:hover{
         .data-types-btn{
             border:0;
         }
+        .form-control{
+            background-color: #58585839;
+            resize: none;
+            color: #000000;
+        }
+        body.dark-mode .form-control{
+            background-color: #042923;
+            resize: none;
+            border-color: transparent;
+            color: #28B5A2;
+        }
+        body.dark-mode .form-control::-webkit-scrollbar{
+            width: 0px;
+        }
+        .form-control::-webkit-scrollbar{
+            width: 0px;
+        }
         .data-types-btn:hover{
             color: #878483;
             border:0;
